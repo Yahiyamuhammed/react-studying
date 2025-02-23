@@ -25,7 +25,7 @@ function App() {
       {/* < Counter/> */}
       {/* < MapFunction data={data}/> */}
       {/* < Select datas={data}/> */}
-      < UseEffect details={data}/>
+      {/* < UseEffect details={data}/> */}
       < UseRef/>
     </>
   )
