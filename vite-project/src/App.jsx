@@ -4,6 +4,7 @@ import './App.css'
 import Headings from './components/heading'
 import Another from './components/another'
 import Counter from './components/counter'
+import MapFunction from './components/mapFunction'
 
 function App() {
  
@@ -13,7 +14,8 @@ function App() {
       {/* < Headings title='yahiya'/>
       < Headings/>
       < Another/> */}
-      < Counter/>
+      {/* < Counter/> */}
+      < MapFunction/>
     </>
   )
 }
