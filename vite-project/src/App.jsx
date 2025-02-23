@@ -7,6 +7,7 @@ import Counter from './components/counter'
 import MapFunction from './components/mapFunction'
 import Select from './components/select'
 import UseEffect from './components/useEffect'
+import UseRef from './components/useRef'
 
 function App() {
   const data=[
@@ -25,6 +26,7 @@ function App() {
       {/* < MapFunction data={data}/> */}
       {/* < Select datas={data}/> */}
       < UseEffect details={data}/>
+      < UseRef/>
     </>
   )
 }
