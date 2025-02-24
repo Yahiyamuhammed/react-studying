@@ -8,6 +8,7 @@ import MapFunction from './components/mapFunction'
 import Select from './components/select'
 import UseEffect from './components/useEffect'
 import UseRef from './components/useRef'
+import FetchData from './components/fetchData'
 
 function App() {
   const data=[
@@ -26,7 +27,8 @@ function App() {
       {/* < MapFunction data={data}/> */}
       {/* < Select datas={data}/> */}
       {/* < UseEffect details={data}/> */}
-      < UseRef/>
+      {/* < UseRef/> */}
+      < FetchData/>
     </>
   )
 }
