@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { createContext, useContext, useState } from 'react'
 
 import './App.css'
 import Headings from './components/heading'
@@ -9,6 +9,9 @@ import Select from './components/select'
 import UseEffect from './components/useEffect'
 import UseRef from './components/useRef'
 import FetchData from './components/fetchData'
+import State from './components/state'
+export const countContext= createContext()
+
 
 function App() {
   const data=[
@@ -16,6 +19,8 @@ function App() {
     {id:2,name:'mufeed',email:'mufeed@gmail.com'},
     {id:3,name:'shammas',email:'shammas@gmail.com'}
 ]
+
+let [count,setCount]=useState(0)
  
   return (
     <>
@@ -28,7 +33,11 @@ function App() {
       {/* < Select datas={data}/> */}
       {/* < UseEffect details={data}/> */}
       {/* < UseRef/> */}
-      < FetchData/>
+      {/* < FetchData/> */}
+      <countContext.Provider value={{count,setCount}}>
+      < State />
+
+      </countContext.Provider>
     </>
   )
 }
