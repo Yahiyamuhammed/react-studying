@@ -14,6 +14,7 @@ export default function(){
         const setUser=async ()=>{
             try{
                 setLoading(true)
+                setError()
                 setEmail(null)
                 const userDetails=await fetch(`https://jsonplaceholder.typicode.com/users/${count}`)
                 const details=await userDetails.json()
