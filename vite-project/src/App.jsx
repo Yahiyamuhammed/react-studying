@@ -10,7 +10,10 @@ import UseEffect from './components/useEffect'
 import UseRef from './components/useRef'
 import FetchData from './components/fetchData'
 import State from './components/state'
-export const countContext= createContext()
+// export const countContext= createContext()
+import CountContext from "./context/CountContext";
+import CountProvider from './providers/CountProvider'
+
 
 
 function App() {
@@ -20,7 +23,6 @@ function App() {
     {id:3,name:'shammas',email:'shammas@gmail.com'}
 ]
 
-let [count,setCount]=useState(0)
  
   return (
     <>
@@ -34,10 +36,13 @@ let [count,setCount]=useState(0)
       {/* < UseEffect details={data}/> */}
       {/* < UseRef/> */}
       {/* < FetchData/> */}
-      <countContext.Provider value={{count,setCount}}>
-      < State />
+      {/* <CountContext.Provider> */}
+      {/* < State /> */}
 
-      </countContext.Provider>
+        < CountProvider>
+          <State/>
+        </CountProvider>
+      {/* </CountContext.Provider> */}
     </>
   )
 }

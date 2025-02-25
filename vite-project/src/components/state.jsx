@@ -1,12 +1,14 @@
 import { useContext, useState } from "react";
 import {div,button} from './counter.module.css'
 import StateCards from "./stateCards";
-import { countContext } from "../App";
+import CountContext from "../context/CountContext";
+import useCount from "../hooks/useCount";
+// import { countContext } from "../App";
 
 
 export default function (){
 
-    const {count,setCount} =useContext(countContext)
+    const {count,setCount} = useCount()
     
     const increment=()=>{
         setCount(count+1)
