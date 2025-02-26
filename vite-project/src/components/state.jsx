@@ -1,8 +1,11 @@
 import { useContext, useState } from "react";
 import {div,button} from './counter.module.css'
 import StateCards from "./stateCards";
-import CountContext from "../context/CountContext";
-import useCount from "../hooks/useCount";
+import CountContext from "../contexts/CountContext";
+// import useCount from "../hooks/useCount";
+import CountContextProvider from "../providers/CountContextProvider";
+import useCountHooks from "../hooks/useCountHooks";
+import useCount from "../hooks/useCountHooks";
 // import { countContext } from "../App";
 
 

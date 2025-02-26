@@ -11,8 +11,9 @@ import UseRef from './components/useRef'
 import FetchData from './components/fetchData'
 import State from './components/state'
 // export const countContext= createContext()
-import CountContext from "./context/CountContext";
-import CountProvider from './providers/CountProvider'
+// import CountContext from "./context/CountContext";
+// import CountProvider from './providers/CountProvider'
+import CountContextProvider from './providers/CountContextProvider'
 
 
 
@@ -39,9 +40,9 @@ function App() {
       {/* <CountContext.Provider> */}
       {/* < State /> */}
 
-        < CountProvider>
+        < CountContextProvider>
           <State/>
-        </CountProvider>
+        </CountContextProvider>
       {/* </CountContext.Provider> */}
     </>
   )
