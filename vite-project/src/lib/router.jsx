@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
-import Home from "../components/pages/home";
-import Datas from "../components/pages/datas";
+import Home from "../pages/home";
+import Datas from "../pages/datas";
+import DataDetails from "../pages/dataDetails";
 
 const router =createBrowserRouter([
     {
@@ -10,6 +11,10 @@ const router =createBrowserRouter([
     {
       path:'/data',
       element:< Datas/>
+    },
+    {
+        path:'/data/:id',
+        element:< DataDetails/>
     }
   ])
 export default router

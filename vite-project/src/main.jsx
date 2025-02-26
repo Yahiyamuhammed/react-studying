@@ -4,8 +4,8 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
-import Home from './components/pages/home.jsx'
-import Datas from './components/pages/datas.jsx'
+import Home from './pages/home.jsx'
+import Datas from './pages/datas.jsx'
 import router from './lib/router.jsx'
 
 // const router =createBrowserRouter([

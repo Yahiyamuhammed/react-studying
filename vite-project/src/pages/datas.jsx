@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, useAsyncError } from "react-router-dom";
+import { Link, Links, useAsyncError } from "react-router-dom";
 
 export default function (){
     const [data,setData]=useState([])
@@ -14,8 +14,9 @@ export default function (){
             <h1>this is datas</h1>
 
             <Link to='/'>go to home</Link>
+           
             <ol>
-            {data.map((dat)=>{return <li>{dat.title}</li>})}
+            {data.map((dat)=>{return  <Link to={`${dat.id}`} > <li>{dat.title}</li> </Link>})}
             </ol>
             
         </div>
